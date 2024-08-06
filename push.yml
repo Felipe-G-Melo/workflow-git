@@ -1,0 +1,12 @@
+name: NodeJS with Grunt
+
+on:
+  push:
+    branches: ['main']
+  pull_request:
+    branches: ['main']
+
+jobs:
+  run-tests:
+    runs-on: ubuntu-latest
+      - run: npm run test
